@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>图片压缩工具</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>上传图片</h2>
+            <input type="file" id="image-upload" accept="image/png, image/jpeg">
+        </section>
+        <section id="preview-section">
+            <h2>图片预览</h2>
+            <div id="original-image-container" class="image-container">
+                <h3>原始图片</h3>
+                <img id="original-image" src="https://via.placeholder.com/300" alt="原始图片预览">
+                <p id="original-size">原始大小: 示例</p>
+            </div>
+            <div id="compressed-image-container" class="image-container">
+                <h3>压缩后图片</h3>
+                <img id="compressed-image" src="https://via.placeholder.com/300" alt="压缩图片预览">
+                <p id="compressed-size">压缩后大小: 示例</p>
+            </div>
+        </section>
+        <section id="compression-settings">
+            <h2>压缩设置</h2>
+            <label for="compression-ratio">选择压缩比例:</label>
+            <input type="range" id="compression-ratio" min="10" max="100" value="50">
+        </section>
+        <button id="download-button">下载压缩图片</button>
+    </main>
+    <footer>
+        <p>由山西广晟美居电器有限公司开发</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
